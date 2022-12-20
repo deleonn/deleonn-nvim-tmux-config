@@ -106,6 +106,10 @@ return packer.startup(function(use)
   use("leafgarland/typescript-vim")
   use("sbdchd/neoformat")
   use("ryanoasis/vim-devicons")
+  use("rust-lang/rust.vim")
+  use("f-person/git-blame.nvim")
+  use("sunjon/shade.nvim")
+  use("mbbill/undotree")
 
   if packer_bootstrap then
     require("packer").sync()
