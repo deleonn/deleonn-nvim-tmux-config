@@ -111,6 +111,8 @@ return packer.startup(function(use)
   use("sunjon/shade.nvim")
   use("mbbill/undotree")
 
+  use("github/copilot.vim")
+
   if packer_bootstrap then
     require("packer").sync()
   end
