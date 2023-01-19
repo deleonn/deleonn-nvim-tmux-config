@@ -109,3 +109,18 @@ lspconfig["sumneko_lua"].setup({
     },
   },
 })
+
+lspconfig["jsonls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["rust_analyzer"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
+lspconfig["eslint_d"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
