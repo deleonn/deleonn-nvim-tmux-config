@@ -26,12 +26,13 @@ local on_attach = function(client, bufnr)
   -- set keybinds
   keymap.set("n", "<leader>gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
   keymap.set("n", "<leader>gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
-  keymap.set("n", "<leader>gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
+  keymap.set("n", "<leader>gd", "<cmd>Lspsaga goto_definition<CR>", opts) -- see definition and make edits in window
+  -- keymap.set("n", "<leader>gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
   keymap.set("n", "<leader>gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
   keymap.set("n", "<leader>ga", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
   keymap.set("n", "<leader>gr", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
   keymap.set("n", "<leader>gs", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
-  keymap.set("n", "<leader>gs", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
+  -- keymap.set("n", "<leader>gs", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
   keymap.set("n", "<leader>ge", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
   keymap.set("n", "<leader>go", "<cmd>Lspsaga outline<CR>", opts) -- see outline on right hand side
   keymap.set("n", "[d", "<cmd>Lspsaga diagnostic_jump_prev<CR>", opts) -- jump to previous diagnostic in buffer

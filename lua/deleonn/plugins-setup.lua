@@ -101,6 +101,7 @@ return packer.startup(function(use)
   use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
   use("dracula/vim")
+  use({ "projekt0n/github-nvim-theme", tag = "v0.0.7" })
   use("preservim/nerdtree")
   use("jremmen/vim-ripgrep")
   use("leafgarland/typescript-vim")

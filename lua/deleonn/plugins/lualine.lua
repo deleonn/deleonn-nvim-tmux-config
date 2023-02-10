@@ -12,24 +12,24 @@ lualine.setup({
     component_separators = "",
     always_divide_middle = true,
   },
-  tabline = {
-    lualine_a = {
-      {
-        "filename",
-        path = 1,
-      },
-    },
-    lualine_b = { "" },
-    lualine_c = { "" },
-    lualine_x = { "", "", "" },
-    lualine_y = { "" },
-    lualine_z = {
-      {
-        "tabs",
-        mode = 1,
-      },
-    },
-  },
+  -- tabline = {
+  --   lualine_a = {
+  --     {
+  --       "filename",
+  --       path = 1,
+  --     },
+  --   },
+  --   lualine_b = { "" },
+  --   lualine_c = { "" },
+  --   lualine_x = { "", "", "" },
+  --   lualine_y = { "" },
+  --   lualine_z = {
+  --     {
+  --       "tabs",
+  --       mode = 1,
+  --     },
+  --   },
+  -- },
   sections = {
     lualine_a = { "mode" },
     lualine_b = { "branch", "diff", "" },
