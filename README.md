@@ -2,10 +2,11 @@
 
 ## Dependencies
 
-- tmux
+- [tmux](https://github.com/tmux/tmux/wiki/Installing)
 - [tpm](https://github.com/tmux-plugins/tpm#installation)
 - vim
-- nvim
+- [nvim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+- [packer](https://github.com/wbthomason/packer.nvim)
 
 ## Configs
 
