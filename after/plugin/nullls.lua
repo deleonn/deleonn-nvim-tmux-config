@@ -10,7 +10,6 @@ local sources = {
     formatting.gofmt,
     formatting.goimports,
     formatting.prettier,
-    -- Add any other formatters or sources you want to use here
 }
 
 null_ls.setup({

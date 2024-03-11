@@ -20,6 +20,13 @@ return require('packer').startup(function(use)
 		end
 	})
 
+    use ({
+        "catppuccin/nvim", as = "catppuccin",
+        config = function()
+            vim.cmd('colorscheme catppuccin-mocha')
+        end
+    })
+
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
 
@@ -54,7 +61,6 @@ return require('packer').startup(function(use)
 
     use({
         "huynle/ogpt.nvim",
-        branch = 'dev',
         requires = {
             "MunifTanjim/nui.nvim",
             "nvim-lua/plenary.nvim",
@@ -67,17 +73,7 @@ return require('packer').startup(function(use)
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }    
 
-    use({'airblade/vim-gitgutter',
-    config = function()
-        -- Unmap vim-gitgutter keymaps to avoid conflict with Harpoon
-        local unmap = vim.api.nvim_del_keymap
-        local mappings = {'hp', 'hs', 'hu', 'hU', 'hr', 'hR', 'h<leader>', 'h?'}
-
-        for _, map in ipairs(mappings) do
-            -- Attempt to unmap each gitgutter mapping
-            pcall(unmap, 'n', '<leader>' .. map)
-        end
-    })
+    use('airblade/vim-gitgutter')
 
     use('~/Developer/vimplugins/todo.nvim')
 end)
