@@ -1,4 +1,6 @@
 vim.keymap.set("n", "<Space>b", vim.cmd.Explore)
+vim.keymap.set("n", "<C-w>v", vim.cmd.vnew)
+vim.keymap.set("n", "<C-w>s", vim.cmd.new)
 vim.api.nvim_set_keymap('n', '<Space>r', ':lua vim.lsp.buf.rename()<CR>', { noremap = true, silent = true })
 
 -- Move selected lines up and down

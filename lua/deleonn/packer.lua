@@ -13,12 +13,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use({
-		'Mofiqul/dracula.nvim',
-		config = function()
-			vim.cmd('colorscheme dracula')
-		end
-	})
+    use('Mofiqul/dracula.nvim')
 
     use ({
         "catppuccin/nvim", as = "catppuccin",
@@ -74,6 +69,14 @@ return require('packer').startup(function(use)
     }    
 
     use('airblade/vim-gitgutter')
+    use('sunjon/shade.nvim')
 
     use('~/Developer/vimplugins/todo.nvim')
+
+    use { 
+        'deleonn/notetaker.nvim',
+        config = function()
+            require('notetaker').set_notes_dir(vim.fn.expand('~/Notes'))
+        end
+    }
 end)

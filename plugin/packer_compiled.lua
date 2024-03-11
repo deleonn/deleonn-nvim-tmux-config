@@ -91,7 +91,6 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["dracula.nvim"] = {
-    config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\0" },
     loaded = true,
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
@@ -120,6 +119,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["notetaker.nvim"] = {
+    config = { "\27LJ\2\ni\0\0\5\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\3\0009\2\4\0029\2\5\2'\4\6\0B\2\2\0A\0\0\1K\0\1\0\f~/Notes\vexpand\afn\bvim\18set_notes_dir\14notetaker\frequire\0" },
+    loaded = true,
+    path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/notetaker.nvim",
+    url = "https://github.com/deleonn/notetaker.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -177,6 +182,11 @@ _G.packer_plugins = {
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
   },
+  ["shade.nvim"] = {
+    loaded = true,
+    path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/shade.nvim",
+    url = "https://github.com/sunjon/shade.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -220,10 +230,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: dracula.nvim
-time([[Config for dracula.nvim]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\0", "config", "dracula.nvim")
-time([[Config for dracula.nvim]], false)
+-- Config for: notetaker.nvim
+time([[Config for notetaker.nvim]], true)
+try_loadstring("\27LJ\2\ni\0\0\5\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\3\0009\2\4\0029\2\5\2'\4\6\0B\2\2\0A\0\0\1K\0\1\0\f~/Notes\vexpand\afn\bvim\18set_notes_dir\14notetaker\frequire\0", "config", "notetaker.nvim")
+time([[Config for notetaker.nvim]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme catppuccin-mocha\bcmd\bvim\0", "config", "catppuccin")
