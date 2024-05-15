@@ -55,3 +55,6 @@ vim.api.nvim_set_keymap('n', '<c-j>', ':TmuxNavigateDown<CR>', opts)
 vim.api.nvim_set_keymap('n', '<c-k>', ':TmuxNavigateUp<CR>', opts)
 vim.api.nvim_set_keymap('n', '<c-l>', ':TmuxNavigateRight<CR>', opts)
 vim.api.nvim_set_keymap('n', '<c-\\>', ':TmuxNavigatePrevious<CR>', opts)
+
+-- format json
+vim.api.nvim_set_keymap('n', '<Space>fj', ":%!jq '.'<CR>", { noremap = true, silent = true })
