@@ -71,8 +71,6 @@ return require('packer').startup(function(use)
     use('airblade/vim-gitgutter')
     use('sunjon/shade.nvim')
 
-    use('~/Developer/vimplugins/todo.nvim')
-
     use { 
         'deleonn/notetaker.nvim',
         config = function()
