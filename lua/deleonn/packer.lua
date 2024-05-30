@@ -15,10 +15,10 @@ return require('packer').startup(function(use)
 
     use('Mofiqul/dracula.nvim')
 
-    use ({
-        "catppuccin/nvim", as = "catppuccin",
+    use({
+        'projekt0n/github-nvim-theme',
         config = function()
-            vim.cmd('colorscheme catppuccin-mocha')
+            vim.cmd('colorscheme github_dark_high_contrast')
         end
     })
 

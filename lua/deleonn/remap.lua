@@ -58,3 +58,7 @@ vim.api.nvim_set_keymap('n', '<c-\\>', ':TmuxNavigatePrevious<CR>', opts)
 
 -- format json
 vim.api.nvim_set_keymap('n', '<Space>fj', ":%!jq '.'<CR>", { noremap = true, silent = true })
+
+-- indenting
+vim.keymap.set('n', '<Tab>', '>>', { noremap = true, silent = true })
+vim.keymap.set('n', '<S-Tab>', '<<', { noremap = true, silent = true })

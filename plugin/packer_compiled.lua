@@ -79,12 +79,6 @@ _G.packer_plugins = {
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    config = { "\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme catppuccin-mocha\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -94,6 +88,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
+  },
+  ["github-nvim-theme"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
   },
   harpoon = {
     loaded = true,
@@ -192,11 +192,6 @@ _G.packer_plugins = {
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["todo.nvim"] = {
-    loaded = true,
-    path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/todo.nvim",
-    url = "/Users/joeldeleon/Developer/vimplugins/todo.nvim"
-  },
   undotree = {
     loaded = true,
     path = "/Users/joeldeleon/.local/share/nvim/site/pack/packer/start/undotree",
@@ -230,14 +225,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: github-nvim-theme
+time([[Config for github-nvim-theme]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\28colorscheme github_dark\bcmd\bvim\0", "config", "github-nvim-theme")
+time([[Config for github-nvim-theme]], false)
 -- Config for: notetaker.nvim
 time([[Config for notetaker.nvim]], true)
 try_loadstring("\27LJ\2\ni\0\0\5\0\a\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\3\0009\2\4\0029\2\5\2'\4\6\0B\2\2\0A\0\0\1K\0\1\0\f~/Notes\vexpand\afn\bvim\18set_notes_dir\14notetaker\frequire\0", "config", "notetaker.nvim")
 time([[Config for notetaker.nvim]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0!colorscheme catppuccin-mocha\bcmd\bvim\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

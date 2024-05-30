@@ -12,3 +12,4 @@
 
 - Place .tmux.conf under `~`
 - Place the nvim folder under `~/.config/nvim`
+- Place the alacritty folder under `~/.config/alacritty`
