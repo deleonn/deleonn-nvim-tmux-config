@@ -1,8 +1,8 @@
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', function()
   builtin.find_files({
-    layout_strategy = 'vertical',
-    layout_config = { width = 0.8 }
+    layout_strategy = 'horizontal',
+    layout_config = { width = 0.9 },
   })
 end, { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>fgf', builtin.git_files, {})
