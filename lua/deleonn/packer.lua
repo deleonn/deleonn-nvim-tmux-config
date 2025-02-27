@@ -71,7 +71,23 @@ return require('packer').startup(function(use)
     use('airblade/vim-gitgutter')
     use('sunjon/shade.nvim')
 
-    use ('mfussenegger/nvim-dap')
+    use {
+        'mfussenegger/nvim-dap',
+        config = function()
+            local dap = require('dap')
+            local ui = require('dapui')
+
+            require('dapui').setup()
+            require('dap-go').setup()
+        end
+    }
+    use {
+        'leoluz/nvim-dap-go',
+        config = function()
+            require('dap-go').setup()
+        end
+    }
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
 
     use { 
         'deleonn/notetaker.nvim',
