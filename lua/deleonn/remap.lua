@@ -1,4 +1,15 @@
-vim.keymap.set("n", "<Space>b", vim.cmd.Explore)
+-- vim.keymap.set("n", "<Space>b", vim.cmd.Explore)
+-- vim.g.netrw_banner = 0
+vim.keymap.set("n", "<Space>b", function() -- Command to open the Netrw and highlight the current file by executing a search (won't work properly unless we hide the netrw banner)
+    local filename = vim.fn.expand("%:t") -- Execute expand first to get the file opened before changing the buffer to netrw
+    vim.cmd("Explore")
+    vim.schedule(function()
+        vim.api.nvim_feedkeys("/" .. vim.fn.escape(filename, "/\\") .. "\r", "n", true)
+    end)
+end, { noremap = true, silent = true })
+
+vim.o.splitbelow = true -- vertical split to bottom
+vim.o.splitright = true -- horizontal split to the right
 vim.keymap.set("n", "<C-w>v", vim.cmd.vnew)
 vim.keymap.set("n", "<C-w>s", vim.cmd.new)
 vim.api.nvim_set_keymap('n', '<Space>r', ':lua vim.lsp.buf.rename()<CR>', { noremap = true, silent = true })

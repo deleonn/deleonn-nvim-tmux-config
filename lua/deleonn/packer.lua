@@ -49,7 +49,13 @@ return require('packer').startup(function(use)
 		}
 	}
 
-    use('jose-elias-alvarez/null-ls.nvim')
+    use {
+        'nvimtools/none-ls.nvim',
+        requires = {
+            "nvimtools/none-ls-extras.nvim",
+        }
+    }
+
     use('MunifTanjim/prettier.nvim')
 
     use('christoomey/vim-tmux-navigator')

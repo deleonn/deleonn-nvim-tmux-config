@@ -10,6 +10,8 @@ local sources = {
     formatting.gofmt,
     formatting.goimports,
     formatting.prettier,
+    require("none-ls.diagnostics.eslint_d"),
+    require("none-ls.formatting.eslint_d")
 }
 
 null_ls.setup({
