@@ -60,15 +60,6 @@ return require('packer').startup(function(use)
 
     use('christoomey/vim-tmux-navigator')
 
-    use({
-        "huynle/ogpt.nvim",
-        requires = {
-            "MunifTanjim/nui.nvim",
-            "nvim-lua/plenary.nvim",
-            "nvim-telescope/telescope.nvim"
-        }
-    })
-
     use {
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
