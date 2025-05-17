@@ -13,5 +13,14 @@ function ColorMyPencils(color)
 	-- vim.api.nvim_set_hl(0, "FloatShadowThrough", { bg = "none", fg = "none" })
 end
 
-ColorMyPencils()
+-- ColorMyPencils()
 
+-- Load packer and other plugin
+require('packer').startup(function(use)
+    use 'wbthomason/packer.nvim'
+    -- All your other plugins here...
+    use('projekt0n/github-nvim-theme')
+end)
+
+-- Set the colorscheme after all plugins are loaded
+vim.cmd([[colorscheme github_dark_high_contrast]])
