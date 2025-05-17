@@ -92,4 +92,12 @@ return require('packer').startup(function(use)
             require('notetaker').set_notes_dir(vim.fn.expand('~/Notes'))
         end
     }
+
+    use({
+      'olimorris/codecompanion.nvim',
+      requires = {
+        "nvim-lua/plenary.nvim",
+        "nvim-treesitter/nvim-treesitter",
+      }
+    })
 end)
